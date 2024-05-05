@@ -30,15 +30,14 @@
       <div id="container">
         <!-- dados colocados dinamicamente -->
 
-        <!-- <div class="info">
+        <!-- <section>
           <img id="image" src="assets/images/icon-reaction.svg" alt="">
           <h4>Reaction</h4>
           80 / 100 -->
+          
       </div>
 
-      <button>
-        Continue
-      </button>
+      <button type="button">Continue</button>
     </section>
   </main>
   <footer>
@@ -54,7 +53,7 @@
           const container = document.querySelector('#container')
 
           data.map(dado => {
-            const info = document.createElement('div')
+            const info = document.createElement('section')
             info.classList.add('info')
             info.style.background = dado.bg
 
