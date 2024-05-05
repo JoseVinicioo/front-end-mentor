@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --White: rgb(255, 255, 255);
+    --Light-pink: rgb(249, 240, 255);
+    --Grayish-purple: rgb(140, 105, 145);
+    --Dark-purple: rgb(47, 21, 51);
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 96vh;
+    background: var(--Light-pink) url(assets/images/background-pattern-desktop.svg) repeat-x center top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 0;
+}
+.encolher{
+    position: relative;
+    margin: 0;
+    margin-bottom: 19px;
+    display: flex;
+    align-items: end;
+    border-top: 1px solid rgba(0, 0, 0, 0.089);
+}
+#enco1{
+    border: none;
+}
+.encolher > img{
+    position: absolute;
+    right: 0;
+}
+.box{
+    display: none;
+    
+}
+.visto{
+    display: block;
+}
+.imagens:hover{
+    cursor: pointer;
+}
+h2{
+    font: 600 1.11em "Work Sans";
+    margin-top: 40px;
+    margin-bottom: 2px;
+}
+h2:hover{
+    color: #AD28EB;
+    cursor: pointer;
+}
+p{
+    font: 400 16px "Work Sans";
+    color: var(--Grayish-purple);
+    line-height: 1.5;
+    margin-top: 25px;
+    margin-bottom: 11px;
+}
+main{
+    margin: 0;
+    margin-top: 85px;
+    border-radius: 15px;
+    padding: 0px 40px;
+    background-color: var(--White);
+    width: 520px;
+    height: 570px;
+}
+header{
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    font: 600 1.7em "Work Sans";
+}
+header > img{
+    height: 40px;
+}
+footer{
+    text-align: center;
+    position: absolute;
+    width: 100%;           
+}
+
+@media (max-width: 620px) {
+    h2{
+        max-width: 90%;
+    }
+    body{
+        width: 100vw;
+        height: auto;
+    }
+    main{
+        max-width: 70vw;
+        height: auto;
+    }
+}
+@media (min-width: 310px) {
+    footer{
+        position: relative;
+        margin-top: 30px;
+    }
+}
