@@ -14,4 +14,6 @@
 
 <a href="https://josevinicioo.github.io/front-end-mentor/results-summary-component-main/">results-summary-component-main</a>
 
-social-links-profile-mai
+<a href="https://josevinicioo.github.io/front-end-mentor/social-links-profile-main/">social-links-profile-main</a>
+
+<a href="https://josevinicioo.github.io/front-end-mentor/testimonials-grid-section-main/">testimonials-grid-section-main</a>
