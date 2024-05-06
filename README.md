@@ -19,3 +19,5 @@
 <a href="https://josevinicioo.github.io/front-end-mentor/testimonials-grid-section-main/">testimonials-grid-section-main</a>
 
 <a href="https://josevinicioo.github.io/front-end-mentor/blog-preview-card-main/">blog-preview-card-main/</a>
+
+<a href="https://josevinicioo.github.io/front-end-mentor/interactive-rating-component-main/">interactive-rating-component-main</a>
