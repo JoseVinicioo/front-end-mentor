@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* main BG */
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    /* card BG */
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    /* line */
+    --Very-dark-blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    width: 99vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-blue-main);
+}
+main{
+    background-color: var(--Very-dark-blue-card);
+    padding: 24px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 20px 1px 8px rgba(0, 0, 0, 0.048);
+}
+#container{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-image, #color{
+    background-color: var(--Cyan);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+#color{
+    border-radius: 12px;
+}
+.top-image {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+#container:hover .top-image {
+    opacity: 1;
+    cursor: pointer;
+}
+#container:hover .bottom-image{
+    opacity: 0.5;
+    cursor: pointer;
+}
+h1{
+    margin-top: 25px;
+    margin-bottom: 16px;
+    font: 500 1.4rem "Outfit";
+    color: var(--White);
+}
+h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+p{
+    font: 300 1.13rem "Outfit";
+    color: var(--Soft-blue);
+    line-height: 1.4;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+#informacoes{
+    display: flex;
+    border-bottom: 1px solid var(--Soft-blue);
+}
+#nfc > h2{
+    font: 500 1.05rem "Outfit";
+    color: var(--Cyan);
+    padding: 5px;
+}
+#nfc{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+#time{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#time > p{
+    font: 300 1rem "Outfit";
+    margin: 0;
+    padding: 5px;
+}
+
+/* footer do card */
+
+#atribuicao{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    gap: 15px;
+}
+
+#atribuicao > img{
+    border-radius: 50%;
+    width: 32px;
+    border: 1px solid var(--White);
+}
+#atribuicao > p{
+    margin: 0;
+    font: 300 1rem "Outfit";
+}
+#atribuicao > p > b{
+    color: var(--White);
+    font-weight: normal;
+}
+#atribuicao > p > b:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+/* footer do body */
+body > footer{
+    color: var(--White);
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 410px) {
+    body{
+        width: 100vw;
+        height: auto;
+    }
+    main{
+        margin-top: 30px;
+        width: 70%;
+    }
+    #container{
+        width: 100%;
+    }
+}
