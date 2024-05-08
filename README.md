@@ -21,3 +21,5 @@
 <a href="https://josevinicioo.github.io/front-end-mentor/blog-preview-card-main/">blog-preview-card-main/</a>
 
 <a href="https://josevinicioo.github.io/front-end-mentor/interactive-rating-component-main/">interactive-rating-component-main</a>
+
+<a href="https://josevinicioo.github.io/front-end-mentor/nft-preview-card-component-main/">nft-preview-card-component-main</a>
