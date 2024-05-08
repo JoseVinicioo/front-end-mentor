@@ -2,7 +2,7 @@
  
  *link pages=>*
 
- <a href="https://josevinicioo.github.io/front-end-mentor/faq-accordion-main/" target="_blank">_faq-accordion-main_</a>
+ <a href="https://josevinicioo.github.io/front-end-mentor/faq-accordion-main/">_faq-accordion-main_</a>
 
  <a href="https://josevinicioo.github.io/front-end-mentor/four-card-feature-section-master/">four-card-feature-section-master</a>
 
