@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --Very-Dark-Grayish-Blue: rgb(72, 85, 106);
+    --Desaturated-Dark-Blue: rgb(109, 127, 151);
+    --Grayish-Blue: rgb(158, 175, 194);
+    --Light-Grayish-Blue: rgb(236, 242, 248);
+}
+
+body {
+    margin: 0;
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+main:first-child {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+#PopUp:last-child {
+    display: none;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 260px;
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
+section {
+    padding: 32px 37px;
+}
+
+#imgPrincip>img {
+    width: 310px;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+h1 {
+    font: 700 1.3rem "Manrope";
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+h2 {
+    font: 700 0.9rem "Manrope";
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+p {
+    font: 500 0.8rem "Manrope";
+    line-height: 21px;
+    color: var(--Grayish-Blue);
+}
+
+#atribuMain {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#nameAtribu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#nameAtribu>h2,
+p {
+    margin: 0;
+}
+
+#iconMain {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#shareImg {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--Light-Grayish-Blue);
+    position: absolute;
+    right: 0;
+}
+
+#attribution {
+    position: absolute;
+    bottom: 0;
+}
