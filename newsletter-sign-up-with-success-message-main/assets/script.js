@@ -1,7 +1,6 @@
 const button = document.querySelector('#botao');
 button.addEventListener('click', function () {
     const input = document.querySelector('input')
-    const body = document.querySelector('body')
     const Email = document.querySelector('#emailCampo').value;
     const main = document.querySelector('main')
     const pagSucess = document.querySelector('#pagSucess')
@@ -24,7 +23,6 @@ button.addEventListener('click', function () {
     }
     const dispensarButton = document.querySelector('#buttonDispense')
     dispensarButton.addEventListener('click', function () {
-        body.style.justifyContent = 'start'
         main.style.display = 'flex'
         pagSucess.style.display = 'none'
         input.value = ''
