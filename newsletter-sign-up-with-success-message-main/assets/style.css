@@ -1,0 +1,199 @@
+:root {
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Charcoal-Grey);
+}
+
+main {
+    width: 930px;
+    height: 640px;
+    background-color:var(--White);
+    display: flex;
+    border-radius: 35px;
+    justify-content: center;
+}
+
+main #img {
+    background: url(images/illustration-sign-up-desktop.svg)no-repeat center;
+    margin-left: 25px;
+    width: 45%;
+}
+
+section {
+    padding: 25px;
+    margin-top: 65px;
+    margin-left: 27px;
+}
+
+h1 {
+    font: normal 3.5rem "RobotoBold";
+}
+h2{
+    font: normal 1rem "RobotoBold";
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+p {
+    font: normal 1.1rem "RobotoRegular";
+    margin: 20px 0px 30px 0px;
+    letter-spacing: -0.5px;
+}
+
+li {
+    margin: 14px 0px;
+    font: normal 1.1rem "RobotoRegular";
+    position: relative;
+    padding-left: 40px;
+    /* Ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    /* Largura da imagem */
+    height: 24px;
+    /* Altura da imagem */
+    background-image: url('images/icon-list.svg');
+    /* Caminho da imagem */
+    background-size: cover;
+}
+input{
+    padding: 16px 140px  16px 30px;
+    margin-bottom: 25px;
+    font: normal 1.1rem "RobotoRegular";
+    border-radius: 7px;
+    border: 1px solid var(--Grey);
+}
+.borderRed{
+    border: 1px solid red;
+
+}
+button{
+    display: block;
+    padding: 20px 60px;
+    border-radius: 7px;
+    font: normal 1.1rem "RobotoBold";
+    color: var(--White);
+    background-color: var(--Dark-Slate-Grey);
+    border: none;
+    transition: all 0.4s ease;
+}
+button:hover{
+    background-image: linear-gradient(90deg, hsl(347, 99%, 66%),hsl(0, 100%, 68%),hsl(8, 99%, 64%),hsl(13, 100%, 62%));
+    cursor: pointer;
+    scale: 1.05;
+    box-shadow: 0 3px 10px 2px hsla(4, 100%, 67%, 0.363);
+}
+#pagSucess {
+    display: none;
+    background-color: var(--White);
+    width: 370px;
+    height: 420px;
+    border-radius: 30px;
+    padding: 50px 70px;
+}
+#pagSucess img{
+    margin-bottom: 30px;
+}
+#pagSucess h1{
+    line-height: 60px;
+    color: var(--Charcoal-Grey);
+}
+#pagSucess p{
+    line-height: 25px;
+    color: var(--Charcoal-Grey);
+}
+#pagSucess button{
+    width: 370px;
+}
+footer {
+    color: var(--White);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+footer a{
+    color: var(--White);
+}
+
+@media (max-width: 940px) {
+    body{
+        justify-content: start;
+    }
+    main{
+        width: 80%;
+        height: 90%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: start;
+    }
+    section{
+        margin: 0;
+    }
+    main #img {
+        margin: 0;
+        background-size: cover;
+        width: 100%;
+        height: 35%;
+        
+    }
+}
+@media (max-width: 500px){
+    body{
+        width: 100%;
+        height: auto;
+        background-color: var(--White);
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        padding: 0px 20px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    main #img{
+        background: url(images/illustration-sign-up-mobile.svg)no-repeat center/cover;
+        margin: 0;
+        width: 100%;
+        height: 200px;
+    }
+    footer{
+        margin: 0;
+        position: relative;
+        color: var(--Charcoal-Grey);
+    }
+    footer a{
+        color: var(--Charcoal-Grey);
+    }
+}
